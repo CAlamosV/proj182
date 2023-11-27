@@ -130,28 +130,28 @@ def generate_sequence(
 def generate_random_sequence(
     sequence_length = 10,
     frame_rate = 30,
-    speed_mean = 0,
-    speed_sd = 1,
+    speed_min = 0,
+    speed_max = 10,
     direction_min = 0,
     direction_max = 2 * np.pi,
-    position_x_mean = 8,
-    position_x_sd = 2,
-    position_y_mean = 8,
-    position_y_sd = 2,
-    gravity_mean = 9.8,
-    gravity_sd = 2,
-    restitution_min = 0.2,
-    restitution_max = 0.8
+    position_x_min = 0,
+    position_x_max = 16,
+    position_y_min = 0,
+    position_y_max = 16,
+    gravity_min = 5,
+    gravity_max = 10,
+    restitution_min = 0.5,
+    restitution_max = 1,
     ):
     """
     Generate a sequence of images of a square object moving in a bounded space with random initial properties.
     """
     # Sample each parameter
-    initial_speed = np.random.normal(speed_mean, speed_sd)
+    initial_speed = np.random.uniform(speed_min, speed_max)
     initial_direction = np.random.uniform(direction_min, direction_max)
-    initial_position_x = np.random.normal(position_x_mean, position_x_sd)
-    initial_position_y = np.random.normal(position_y_mean, position_y_sd)
-    gravity = np.random.normal(gravity_mean, gravity_sd)
+    initial_position_x = np.random.uniform(position_x_min, position_x_max)
+    initial_position_y = np.random.uniform(position_y_min, position_y_max)
+    gravity = np.random.uniform(gravity_min, gravity_max)
     coefficient_of_restitution = np.random.uniform(restitution_min, restitution_max)
 
     # Generate the sequence

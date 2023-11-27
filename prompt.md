@@ -17,8 +17,8 @@ I have a function generate_random_sequence() that returns a tuple of  (a list of
 Use it to generate the training data.
 
 TODO
+- First target something like 4th image?
 - sequences should have consecutive pixels more spread out
-- new loss to penalize predicing previous frame
-- curriculum leaning
-    - first constant speed
-    - then gravity
+- new loss to penalize predicing previous frame?
+- curriculum leaning?
+- Tune architecture?
