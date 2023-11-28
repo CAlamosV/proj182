@@ -1,3 +1,4 @@
+<img width="1359" alt="Screen Shot 2023-11-28 at 14 22 53" src="https://github.com/CAlamosV/proj182/assets/66649572/49e2dcc5-f739-41e5-a2cb-42d2d421e050">
 # In-Context Learning of Intuitive Physics in Vision Transformers
 ### Cristian Alamos, Masha Bondarenko, Martin Guo, Alex Nguyen, Max Vogel
 
